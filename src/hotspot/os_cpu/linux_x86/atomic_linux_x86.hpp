@@ -103,6 +103,7 @@ inline D Atomic::PlatformAdd<8>::fetch_and_add(I add_value, D volatile* dest) co
   return old_value;
 }
 
+//chengang test
 template<>
 template<typename T>
 inline T Atomic::PlatformXchg<8>::operator()(T exchange_value,
